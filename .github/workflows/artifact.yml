@@ -27,11 +27,8 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: hello-artifact
-        path: ./artifacts
+        path: artifacts
 
-    - name: list  the text
-      run: ls -lartR
-
-    - name: Display the text
+    - name: Display content of the text file
       run: cat ./artifacts/hello.txt
 
